@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('A.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Menggunakan min-height agar konten tetap tampil di dalam viewport */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px; /* Mengurangi margin bawah h1 */
+    font-size: 24px; /* Mengurangi ukuran font h1 */
+    color: white; /* Mengubah warna teks menjadi putih */
+}
+
+#localVideo-container {
+    position: relative;
+    width: 300px; /* Lebar video */
+    height: 150px; /* Tinggi video */
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+#localVideo-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: -2px -2px 15px #888888;
+}
+
+#videos {
+    width: 300px; /* Lebar video */
+    max-width: 100%; /* Lebar maksimum */
+    overflow: hidden; /* Mengatasi video yang lebih besar dari area tampilan */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Satu kolom */
+    gap: 10px;
+}
+
+.grid-item {
+    position: relative;
+    width: 500px; /* Lebar video */
+    height: 350px; /* Tinggi video */
+    border-radius: 5px;
+    box-shadow: -2px -2px 15px #888888;
+}
+
+.grid-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+#buttons-container {
+    display: flex;
+    justify-content: flex-start; /* Menyesuaikan ke kiri */
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Menambah margin bawah */
+}
+
+#buttons-container label {
+    color: white; /* Mengubah warna teks menjadi putih */
+}
+
+#roomId {
+    margin: 5px;
+    font-size: 16px;
+}
+
+#joinBtn {
+    margin: 5px;
+    font-size: 16px;
+    background-color: green; /* Mengubah background tombol menjadi hijau */
+    color: white; /* Mengubah warna teks menjadi putih */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+#leaveBtn {
+    margin: 5px;
+    font-size: 16px;
+    background-color: red; /* Mengubah background tombol menjadi merah */
+    color: white; /* Mengubah warna teks menjadi putih */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+#notification {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: red;
+}
